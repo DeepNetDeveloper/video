@@ -395,8 +395,6 @@ if __name__ == "__main__":
     os.makedirs("results", exist_ok=True)
     
     app.queue(max_size=3).launch(
-        server_name="0.0.0.0",
-        server_port=7860,
-        share=False,
+        share=True,
         show_error=True
     )
